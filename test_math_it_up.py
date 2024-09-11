@@ -31,23 +31,30 @@ def test_is_even():
   """
   Tests for the `is_even` function
   """
+  assert math_it_up.is_even(2) == True
+  assert math_it_up.is_even(3) == False
 
 def test_is_odd():
   """
   Tests for the `is_odd` function
   """
+  assert math_it_up.is_odd(3) == True
+  assert math_it_up.is_odd(2) == False
 
 def test_mean():
   """
   Tests for the `mean` function
   """
+  assert math_it_up.mean([1, 1, 2, 3, 3, 4, 6, 7, 7, 8, 9, 9]) == 5.0
 
 def test_median():
   """
   Tests for the `median` function
   """
+  assert math_it_up.median([1, 1, 2, 3, 3, 4, 6, 7, 7, 8]) == 3.5
 
 def test_mode():
   """
   Tests for the `mode` function
   """
+  assert math_it_up.mode([1, 1, 1, 2, 3, 3, 3, 4, 6, 7, 7, 8, 9, 9]) == [1, 3]
